@@ -1,0 +1,44 @@
+.todo-row {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-m);
+  padding: var(--spacing-s) var(--spacing-m);
+  cursor: default;
+}
+
+.todo-input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-family: monospace;
+  font-weight: 700;
+}
+
+.todo-text {
+  flex: 1;
+  font-family: monospace;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.todo-text.completed {
+  opacity: 0.6;
+}
+
+.todo-delete {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-family: monospace;
+  font-weight: 900;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}

@@ -1,0 +1,201 @@
+/* 素风主题 - 零圆角、零阴影、零动画 */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* First principles: no animation */
+  animation: none !important;
+  transition: none !important;
+}
+
+html, body, #root {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 700;
+  background: var(--bg);
+  color: var(--text);
+  user-select: none;
+  /* 允许拖动窗口 */
+  cursor: default;
+}
+
+.app {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  min-height: 400px;
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--spacing-m) var(--spacing-m) var(--spacing-s);
+}
+
+.title {
+  font-family: monospace;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+}
+
+.count {
+  font-family: monospace;
+  font-weight: 700;
+}
+
+.expand-btn {
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-family: monospace;
+  font-size: var(--small-size);
+  font-weight: 700;
+}
+
+/* Dividers */
+.divider {
+  height: 1px;
+  width: 100%;
+}
+.divider.thick {
+  height: 2px;
+}
+
+/* Input Bar */
+.input-bar {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-s);
+  padding: var(--spacing-s) var(--spacing-m);
+}
+
+.input-bar .bullet {
+  font-size: var(--body-size);
+  font-weight: 900;
+}
+
+.input-bar .todo-input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-family: monospace;
+  font-size: var(--body-size);
+  font-weight: 700;
+}
+
+.input-bar .todo-input::placeholder {
+  color: var(--muted);
+}
+
+.add-btn {
+  width: 28px;
+  height: 28px;
+  border: none;
+  cursor: pointer;
+  font-family: monospace;
+  font-size: var(--glyph-size);
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Todo List */
+.todo-list {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.todo-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.todo-list::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+
+.todo-list::-webkit-scrollbar-thumb {
+  background: var(--muted);
+  border-radius: 0;
+}
+
+/* Empty State */
+.empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: var(--spacing-s);
+}
+
+.empty-glyph {
+  font-size: var(--hero-size);
+  font-weight: 900;
+  letter-spacing: 0.2em;
+}
+
+.empty-text {
+  font-size: var(--small-size);
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--spacing-s) var(--spacing-m);
+}
+
+.hint {
+  font-size: var(--small-size);
+}
+
+.clear-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-family: monospace;
+  font-size: var(--small-size);
+  font-weight: 700;
+}
+
+/* Settings */
+.settings {
+  padding: var(--spacing-m);
+}
+
+.alpha-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--small-size);
+  margin-bottom: var(--spacing-s);
+}
+
+.alpha-slider {
+  width: 100%;
+  height: 20px;
+  background: var(--surface);
+  border: var(--border-width) solid var(--text);
+  cursor: pointer;
+  appearance: none;
+}
+
+.alpha-slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 16px;
+  height: 20px;
+  background: var(--text);
+  cursor: pointer;
+}

@@ -1,0 +1,3 @@
+[submodule "reference-macos"]
+	path = reference-macos
+	url = https://github.com/lijigang/JintianMeiBaihuo.git
