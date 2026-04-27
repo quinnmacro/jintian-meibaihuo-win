@@ -1,5 +1,4 @@
-import React, { useState } from 'react'
-import { theme, glyphs } from '../theme/pixel'
+import { theme } from '../theme/pixel'
 import './PixelCheckbox.css'
 
 interface Props {

@@ -5,6 +5,9 @@ dist/
 # Build
 target/
 
+# Coverage
+coverage/
+
 # IDE
 .idea/
 .vscode/

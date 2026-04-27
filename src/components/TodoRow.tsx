@@ -82,6 +82,7 @@ export function TodoRow({ todo, onToggle, onUpdate, onDelete }: Props) {
         className="todo-delete"
         onClick={onDelete}
         title="删除"
+        aria-label="删除"
         style={{
           color: theme.accent,
           fontSize: theme.glyphSize,

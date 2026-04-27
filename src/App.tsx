@@ -40,6 +40,7 @@ export function App() {
         <button
           className="expand-btn"
           onClick={() => setShowSettings(!showSettings)}
+          aria-label="设置"
           style={{ color: theme.text }}
         >
           {showSettings ? glyphs.collapse : glyphs.expand}
@@ -64,6 +65,7 @@ export function App() {
           className="add-btn"
           onClick={handleAdd}
           title="添加 (Enter)"
+          aria-label="添加 (Enter)"
           style={{ background: theme.accent, color: theme.bg }}
         >
           +
@@ -109,6 +111,7 @@ export function App() {
           <button
             className="clear-btn"
             onClick={store.clearCompleted}
+            aria-label="清除已完成"
             style={{ color: theme.accent }}
           >
             [清除已完成]

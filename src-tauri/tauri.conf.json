@@ -13,16 +13,7 @@
     "allowlist": {
       "all": false,
       "window": {
-        "all": true,
-        "setDecorations": true,
-        "setTransparent": true,
-        "setAlwaysOnTop": true
-      },
-      "fs": {
-        "all": false,
-        "readFile": true,
-        "writeFile": true,
-        "scope": ["$APPDATA/jintian-meibaihuo/*"]
+        "all": true
       }
     },
     "bundle": {
